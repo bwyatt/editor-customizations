@@ -23,7 +23,7 @@ The document should have the following sections:
 
 Interview me to gather all the necessary information for your plan, asking one question at a time and integrating my responses into the plan document.
 
-Notify me when your plan is complete and ready for review.
+Notify me when your plan is complete and ready for review. Do not begin implementing the feature until I have reviewed and approved your plan.
 
 When implementing the feature, you should refer back to your implementation plan regularly to ensure that you are following the steps you outlined and that you are meeting the requirements you identified.
 
