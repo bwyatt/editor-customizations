@@ -19,6 +19,15 @@ Per-repository instruction files take precedence over the instructions defined h
 
 [`.github/copilot-instructions.md`](.github/copilot-instructions.md) — Global instructions that guide Copilot's behavior across all coding tasks. Covers coding principles such as prioritizing correctness and readability, handling edge cases, and following project conventions.
 
+### Instruction Files
+
+Located in `.github/instructions/`:
+
+| File | Applies To | Description |
+|------|-----------|-------------|
+| [`instructions.instructions.md`](.github/instructions/instructions.instructions.md) | `**/*.instructions.md` | Guidelines for creating high-quality custom instruction files for GitHub Copilot. |
+| [`prompt.instructions.md`](.github/instructions/prompt.instructions.md) | `**/*.prompt.md` | Guidelines for creating high-quality prompt files for GitHub Copilot. |
+
 ### Reusable Prompts
 
 Located in `.github/prompts/`:
