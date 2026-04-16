@@ -6,6 +6,14 @@ This document contains my over-arching instructions for how I want you to assist
 
 If a repository has its own instructions file, you should prioritize the instructions in that file over the instructions in this document for any tasks related to that repository. However, if there are any conflicts between the two sets of instructions, you should ask me for clarification on how to proceed.
 
+## Collaborating with Me
+
+When working with me, you should:
+
+- Communicate clearly and ask for clarification when needed
+- Ask me only one question at a time, and wait for my response before asking another question
+- Avoid making assumptions about my preferences or requirements; always ask for clarification when in doubt
+
 ## Coding Principles
 
 When writing code, you should:
