@@ -53,7 +53,7 @@ When performing a code review, follow these principles:
 5. **Recognize good practices**: Acknowledge well-written code and smart solutions
 6. **Be pragmatic**: Not every suggestion needs immediate implementation
 7. **Group related comments**: Avoid multiple comments about the same topic
-8. **Be relevant**: Ensure your comments are relevant to the code
+8. **Be relevant**: Ensure your comments are relevant to the code. Don't review code in git submodules.
 9. **Consider the context**: Understand the purpose of the code and its constraints
 10. **Validate your suggestions**: Ensure your suggestions are correct and applicable
 
@@ -128,6 +128,7 @@ When performing a code review, check for security issues:
 
 - **Sensitive Data**: No passwords, API keys, tokens, or PII in code or logs
 - **Input Validation**: All user inputs are validated and sanitized
+    - For GUIDs, check for valid format and length
 - **SQL Injection**: Use parameterized queries, never string concatenation
 - **Authentication**: Proper authentication checks before accessing resources
 - **Authorization**: Verify user has permission to perform action
@@ -341,6 +342,7 @@ When performing a code review, systematically verify:
 - [ ] Complex logic is broken into simpler parts
 - [ ] Error handling is appropriate
 - [ ] No commented-out code or TODO without tickets
+- [ ] Code complies with project-specific standards and guidelines, if applicable
 
 ### Security
 - [ ] No sensitive data in code or logs
@@ -360,6 +362,7 @@ When performing a code review, systematically verify:
 - [ ] No obvious performance issues (N+1, memory leaks)
 - [ ] Appropriate use of caching
 - [ ] Efficient algorithms and data structures
+- [ ] Update concurrency handled intentionally
 - [ ] Proper resource cleanup
 
 ### Architecture
@@ -373,6 +376,8 @@ When performing a code review, systematically verify:
 - [ ] Complex logic has explanatory comments
 - [ ] README is updated if needed
 - [ ] Breaking changes are documented
+- [ ] CHANGELOG is updated if applicable
+- [ ] Documentation content is consistent with implementation
 
 ## Prompt Engineering Tips
 
