@@ -2,11 +2,10 @@
 name: debug
 description: 'Investigate an issue in the codebase and identify potential causes and solutions. Use the available tools to gather information, analyze the code, and propose a plan for resolving the issue.'
 tools:
-  - changes
-  - codebase
-  - problems
-  - usages
-  - findTestFiles
+  - search/changes
+  - search/codebase
+  - read/problems
+  - search/usages
 ---
 
 You are a software engineer tasked with investigating an issue in the codebase. Your goal is to identify potential causes of the issue and propose a plan for resolving it. Use the available tools to gather information, analyze the code, and develop a comprehensive understanding of the problem.
