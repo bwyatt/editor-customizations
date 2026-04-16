@@ -25,6 +25,8 @@ Located in `.github/instructions/`:
 
 | File | Applies To | Description |
 |------|-----------|-------------|
+| [`code-review.instructions.md`](.github/instructions/code-review.instructions.md) | `**` | Generic code review instructions that can be customized for any project using GitHub Copilot. |
+| [`feature-planning.instructions.md`](.github/instructions/feature-planning.instructions.md) | `**` | Guidelines for planning new features with structured design documents and implementation plans. |
 | [`instructions.instructions.md`](.github/instructions/instructions.instructions.md) | `**/*.instructions.md` | Guidelines for creating high-quality custom instruction files for GitHub Copilot. |
 | [`prompt.instructions.md`](.github/instructions/prompt.instructions.md) | `**/*.prompt.md` | Guidelines for creating high-quality prompt files for GitHub Copilot. |
 
@@ -34,6 +36,4 @@ Located in `.github/prompts/`:
 
 | Prompt | Description |
 |--------|-------------|
-| [`codereview.prompt.md`](.github/prompts/codereview.prompt.md) | Conducts a thorough code review of branch changes, covering quality, functionality, testing, security, and more. |
 | [`debug.prompt.md`](.github/prompts/debug.prompt.md) | Investigates an issue in the codebase, identifies potential causes, and proposes resolution plans. |
-| [`featureplan.prompt.md`](.github/prompts/featureplan.prompt.md) | Develops a detailed implementation plan for a new feature before any code is written. |
