@@ -19,6 +19,14 @@ When asked to perform a review, confirm whether you should evaluate just the cur
 
 When performing a code review, respond in **English** (or specify your preferred language).
 
+## Before You Review
+
+- Read the Markdown files in the repository to understand the project structure, coding standards, and any specific guidelines.
+- Familiarize yourself with the project's architecture and design patterns.
+- Review the pull request description if available and any linked issues to understand the context and purpose of the changes.
+- Familiarize yourself with any imported modules or dependencies that are relevant to the code being reviewed.
+- Familiarize yourself with APIs or external services that the code interacts with, if applicable.
+
 ## Review Priorities
 
 When performing a code review, prioritize issues in the following order:
@@ -32,7 +40,7 @@ When performing a code review, prioritize issues in the following order:
 ### 🟡 IMPORTANT (Requires discussion)
 - **Code Quality**: Severe violations of SOLID principles, excessive duplication
 - **Test Coverage**: Missing tests for critical paths or new functionality
-- **Performance**: Obvious performance bottlenecks (N+1 queries, memory leaks)
+- **Performance**: Obvious performance bottlenecks (N+1 queries, memory leaks, repetitive expensive operations, caching opportunities)
 - **Architecture**: Significant deviations from established patterns
 - **Standards Compliance**: Violations of project-specific coding standards, security guidelines, or documentation requirements
 
@@ -228,6 +236,8 @@ When performing a code review, check documentation:
 - **API Documentation**: Public APIs must be documented (purpose, parameters, returns)
 - **Complex Logic**: Non-obvious logic should have explanatory comments
 - **README Updates**: Update README when adding features or changing setup
+- **Changelog updates**: If the project has a CHANGELOG, it should include any new features, bug fixes, and breaking changes
+- **Operational Documentation**: Update any relevant operational runbooks or deployment guides if the changes affect deployment or operations; ensure that any new environment variables, configuration options, or operational procedures are clearly documented
 - **Breaking Changes**: Document any breaking changes clearly
 - **Examples**: Provide usage examples for complex features
 
@@ -377,6 +387,7 @@ When performing a code review, systematically verify:
 - [ ] README is updated if needed
 - [ ] Breaking changes are documented
 - [ ] CHANGELOG is updated if applicable
+- [ ] Operational documentation is updated if applicable
 - [ ] Documentation content is consistent with implementation
 
 ## Prompt Engineering Tips
@@ -389,3 +400,12 @@ When performing a code review, apply these prompt engineering principles from th
 4. **Avoid Ambiguity**: Be specific about which file, line, and issue you're addressing
 5. **Indicate Relevant Code**: Reference related code that might be affected by changes
 6. **Experiment and Iterate**: If initial review misses something, review again with focused questions
+
+## Before Returning Findings
+
+When performing a code review, before returning your findings:
+
+- Review your comments for clarity, specificity, and constructiveness
+- Ensure you have provided actionable suggestions, not just identified issues
+- Double-check any code examples for correctness and applicability
+- Double-check each finding to ensure accuracy and relevance to the code being reviewed
