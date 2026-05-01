@@ -15,6 +15,8 @@ If there are conflicts between this and project-specific instructions, the proje
 
 When asked to perform a review, confirm whether you should evaluate just the current branch's changes or the entire codebase. When comparing changes to a previous branch, confirm the correct branch to compare against, and adjust your review scope accordingly.
 
+Do not include files ignored by .gitignore in your review.
+
 ## Review Language
 
 When performing a code review, respond in **English** (or specify your preferred language).
